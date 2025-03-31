@@ -1,0 +1,486 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+HU:wght@100..400&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header {
+    width: 100%;
+
+}
+
+.header-informacoes {
+    display: flex;
+    width: 100%;
+    background-color: #22344e;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    gap: 20px;
+}
+
+.informacoes1 {
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.informacoes1 a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.informacoes2 {
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.informacoes2 a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 150px;
+}
+
+.TituloHeader {
+    font-family: "Playwrite HU", cursive;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 40px;
+    color: #ff7b00;
+}
+
+header #MenuPrincipal {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    background-color: #22344e;
+}
+
+header #MenuPrincipal a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+header #MenuPrincipal li {
+    padding: 10px;
+    list-style: none;
+    font-weight: 600;
+}
+
+header #MenuPrincipal li:hover {
+    background-color: #ffffff;
+    color: #22344e;
+    border-radius: 10px;
+    transition: .2s all;
+}
+
+.Whats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.Whats button {
+    background-color: #22344e;
+    border: none;
+    color: #ffffff;
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+#Menu {
+    background-color: #ff7b00;
+    border: none;
+    color: #ffffff;
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* MODAL */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 30%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* INÍCIO OCULTO */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+/* QUANDO ATIVO */
+.modal.ativo {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-content {
+    border-radius: 8px;
+    transform: scale(0.8);
+    transition: transform 0.3s ease-in-out;
+    width: 100%;
+    height: 100dvh;
+    background-color: #ffffff;
+}
+
+/* ANIMAÇÃO DE CRESCIMENTO QUANDO ATIVO */
+.modal.ativo .modal-content {
+    transform: scale(1);
+}
+
+#modalMenu a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#modalMenu li {
+    list-style: none;
+}
+
+#modalMenu a:hover {
+    background: lightgray;
+}
+
+.close-btn {
+    margin-top: 10px;
+    cursor: pointer;
+    color: red;
+    font-weight: bold;
+}
+
+.cabecarioMenuLateral {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #22344e;
+}
+
+.cabecarioMenuLateral img {
+    width: 150px;
+}
+
+@media screen and (max-width: 800px) {
+    .header-informacoes {
+        display: none;
+    }
+
+    .TituloHeader {
+        display: none;
+    }
+
+    #EntreContato {
+        display: none;
+    }
+
+    .modal {
+        width: 100%;
+    }
+}
+
+
+.sectionPri {
+    width: 100%;
+    height: 470px;
+    background-image: url(Imagens/banner.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.sectionSeg h1 {
+    text-align: center;
+    font-weight: 900;
+    padding: 10px;
+    color: #22344e;
+}
+
+.paginasBola {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+}
+
+.Bola {
+    text-align: center;
+    display: flex;
+
+}
+
+.Bola img {
+    width: 100px;
+    border-radius: 50%;
+}
+
+.SectionTri {
+    display: flex;
+    gap: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+    background-color: #22344e;
+}
+
+.SectionTri img {
+    width: 400px;
+    border-radius: 50%;
+    border: 5px solid #ff7b00;
+}
+
+.textoTri{
+    width:30%;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 20px;
+}
+.textoTri p{
+    text-align: justify;
+    padding: 10px;
+}
+.barra{
+    text-align:center;
+    padding-inline: 10px;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+    width: 100%;
+    height: 50px;
+    background-color: #ff7b00;
+    font-size: 30px;
+}
+
+
+.projetosQua{
+    background-color: #ff7b00;
+    text-align: center;
+    font-weight: 900;
+    display: flex;
+    color: #ffffff;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.cards{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-evenly;
+    gap: 10px;
+    padding: 10px;
+}
+
+.card{
+    width: 500px;
+    background-color: #22344e;
+    border-radius: 25px;
+    padding: 0;
+}
+
+.card:hover{
+    box-shadow: 2px 5px 10px #8f8e8e;     
+    transition: .2s all ease-out;
+}
+.card img{
+    width: 500px;
+    border-radius: 20px 20px 0 0 ;
+}
+.card .cardTitulo{
+    background-color: #ffffff;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+    color: #22344e;
+}
+.card p{
+    font-size: 17px;
+    padding: 10px;
+    text-align: justify;
+    color: #ffffff;
+}
+
+.cardButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 20px;
+}
+
+.cardButton button{
+    background-color: #ffffff;
+    padding: 10px;
+    border: none;  
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px #000 ;
+}
+.cardButton button:hover{
+    background-color: #22344e;
+    color: #ffffff;
+    box-shadow: 2px 2px 2px #000 ;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 800px) {
+    .sectionPri {
+        width: 100%;
+        height: 470px;
+        background-image: url(Imagens/BannerCll.png);
+        background-position: center;
+        background-size: cover;
+    }
+    .Bola img{
+        width: 50px;
+    }
+    .sectionSeg h1{
+        font-size: 17px;
+    }
+
+    .SectionTri{
+        display: block;
+        gap: 10px;
+    }
+    .textoTri {
+        width: 100%;
+    }
+    .SectionTri img{
+       width: 300px;
+       margin: auto;
+       display: block;
+    }
+    .cards{
+        grid-template-columns: auto;
+    }
+
+    .card{
+        width: 350px;
+    }
+
+    .card img{
+        width: 350px;
+    }
+}
+
+footer{
+    display: flex;
+    padding: 10px;
+    background-color: #22344e;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.logoFooter{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.logoFooter img{
+    width: 350px;
+}
+
+.SitesFooter{
+    text-align: center;
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.SitesFooter li{
+    list-style: none;
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 400;
+}
+.SitesFooter li:hover{
+    color: #2c5896;
+}
+
+.ContatoFooter{
+    padding: 10px;
+}
+
+.ContatoFooter h1{
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.iconesFooter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.iconesFooter img{
+    width:50px;
+}
+
+
+@media screen and (max-width: 800px) {
+    footer{
+        display: block;
+
+    }
+    .ContatoFooter h1{
+        text-align: center;
+    }
+
+}
